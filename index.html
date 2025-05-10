@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom - Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Find Your Next Adventure</h1>
+        <p>Explore new destinations, experience different cultures, and create unforgettable memories.</p>
+        <input type="text" id="search-bar" placeholder="Enter your favourite destination">
+        <button onclick="searchDestinations()">Search</button>
+        
+        <button onclick="bookNow()">Book Now</button>
+<!--  modal-->
+<div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Booking Information</h2>
+        <form id="bookingForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            
+
+            
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div id="suggestions" class="suggestions"></div>
+    </section>
+
+    
+
+
+        <!----->
+
+
+        <div class="destination" id="beach-recommendation" style="display:none;">
+            <h3>Beach Destinations</h3>
+            <div class="images">
+                <img src="assets/beachimg1.jpg" alt="Kovalam Beach">
+                <h2>Kovalam Beach, Kerala</h2>
+                <p>Kovalam Beach is a stunning destination in Kerala, known for its picturesque landscape, serene atmosphere, and rejuvenating Ayurvedic treatments. The beach offers breathtaking sunsets, crystal-clear waters, and a tranquil ambiance, making it an ideal spot for relaxation and rejuvenation</p>
+                <img src="assets/beachimg2.jpg" alt="Marina Beach">
+                <h2>Marina Beach, Chennai</h2>
+                <p>Marina Beach is one of India's most iconic beaches, located in Chennai, Tamil Nadu. Stretching along the Bay of Bengal, it offers a vibrant atmosphere, stunning sunrises, and breathtaking views of the ocean. The beach is also home to several historical landmarks and is a popular spot for evening strolls and relaxation</p>
+            </div>
+        </div>
+
+        <div class="destination" id="temple-recommendation" style="display:none;">
+            <h3>Temple Destinations</h3>
+            <div class="images">
+                <img src="assets/templeimg1.jpg" alt="Guruvayoor Temple">
+                <h2>Guruvayoor Temple, Kerala</h2>
+                <p>Guruvayoor Temple is a renowned Hindu temple located in Thrissur, Kerala, dedicated to Lord Krishna. The temple is one of the most famous and sacred places of worship in India, attracting millions of devotees every year. The temple is known for its vibrant festivals, intricate architecture, and spiritual significance</p>
+                <img src="assets/templeimg2.jpg" alt="Thanjavur Temple">
+                <h2>Brihadeeswara Temple, Thanjavur</h2>
+            <p>The Brihadeeswara Temple in Thanjavur, Tamil Nadu, is a magnificent example of Chola architecture and is dedicated to Lord Shiva. This UNESCO World Heritage Site is renowned for its massive size, intricate carvings, and stunning architecture. The temple is a testament to the rich cultural heritage of the Chola dynasty and is one of the most visited temples in India</p>
+            </div>
+        </div>
+
+        <div class="destination" id="country-recommendation" style="display:none;">
+            <h3>Country-based Recommendations</h3>
+            <div class="images">
+                <img src="assets/countryimg1.jpg" alt="india">
+                <h2>india</h2>
+                <p> India is a diverse and vibrant country, known for its rich cultural heritage, stunning landscapes, and bustling cities. From the majestic Taj Mahal to the beautiful beaches of Goa, India offers a unique blend of tradition, history, and modernity. With its diverse cuisine, colorful festivals, and warm hospitality, India is a destination that has something for everyone.</p>
+                <img src="assets/countryimg2.jpg" alt="Malaysia">
+                <h2>Malasia</h2>
+                <p>Malaysia is a multicultural country in Southeast Asia, known for its stunning beaches, lush rainforests, and vibrant cities like Kuala Lumpur. From the iconic Petronas Twin Towers to the beautiful Batu Caves, Malaysia offers a mix of modern architecture, rich cultural heritage, and delicious cuisine. With its warm climate and friendly people, Malaysia is a popular destination for tourists and travelers.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <a>Facebook</a>
+            <a>Twitter</a> 
+            <a>Instagram</a>
+        </div>
+        
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
